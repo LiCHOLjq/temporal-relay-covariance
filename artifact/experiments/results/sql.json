@@ -1,0 +1,144 @@
+{
+  "sqlite_version": "3.45.1",
+  "transfer_source": {
+    "name": "sx-mathoverflow-a2q.txt.gz",
+    "url": "https://snap.stanford.edu/data/sx-mathoverflow-a2q.txt.gz",
+    "bytes": 861763,
+    "sha256": "1e160dcd3e685f7467f4869451899bae0299016080ae994895a900b57812ca78",
+    "records": 107581
+  },
+  "datasets": {
+    "MathOverflowA2Q": {
+      "read_sort_s": 0.16477605600005063,
+      "layout_s": 0.11321666899993943,
+      "measurements": {
+        "indexed": [
+          0.06116224400000192,
+          0.06126237300009052,
+          0.061142598999936126
+        ],
+        "endpoint": [
+          0.14980946499997572,
+          0.14466770199999246,
+          0.14218277099996612
+        ]
+      },
+      "matrix_entries": 305,
+      "nonself": 104138,
+      "self_removed": 3443,
+      "bins": 43512,
+      "moments": {
+        "all": {
+          "mean2": 719,
+          "var12": 2739,
+          "iid12": 2157,
+          "diag12": 2765,
+          "native_mean2": 590
+        },
+        "odd": {
+          "mean2": 354,
+          "var12": 1318,
+          "iid12": 1062,
+          "diag12": 1324,
+          "native_mean2": 288
+        },
+        "contrast": {
+          "mean2": -11,
+          "var12": 2767,
+          "iid12": 2157,
+          "diag12": 2765,
+          "native_mean2": -14
+        }
+      },
+      "sha256": "1e160dcd3e685f7467f4869451899bae0299016080ae994895a900b57812ca78"
+    },
+    "CollegeMsg": {
+      "read_sort_s": 0.04102106499999536,
+      "layout_s": 0.06476778100000047,
+      "measurements": {
+        "indexed": [
+          0.03811301899997943,
+          0.03767654800003584,
+          0.0376590750000787
+        ],
+        "endpoint": [
+          0.0655576880000126,
+          0.06480740500001048,
+          0.06479556700003286
+        ]
+      },
+      "matrix_entries": 2952,
+      "nonself": 59835,
+      "self_removed": 0,
+      "bins": 3320,
+      "moments": {
+        "all": {
+          "mean2": 90091,
+          "var12": 2108471,
+          "iid12": 270273,
+          "diag12": 2537831,
+          "native_mean2": 77113
+        },
+        "odd": {
+          "mean2": 50744,
+          "var12": 1520878,
+          "iid12": 152232,
+          "diag12": 1636924,
+          "native_mean2": 44095
+        },
+        "contrast": {
+          "mean2": 11397,
+          "var12": 2589347,
+          "iid12": 270273,
+          "diag12": 2537831,
+          "native_mean2": 11077
+        }
+      },
+      "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa"
+    },
+    "EmailEU": {
+      "read_sort_s": 0.22221908699998494,
+      "layout_s": 0.385423954000089,
+      "measurements": {
+        "indexed": [
+          0.2276940609999656,
+          0.2267189930000768,
+          0.22720797500005574
+        ],
+        "endpoint": [
+          0.40743251200001396,
+          0.3996915820000595,
+          0.40398952699990787
+        ]
+      },
+      "matrix_entries": 3948,
+      "nonself": 332334,
+      "self_removed": 0,
+      "bins": 9844,
+      "moments": {
+        "all": {
+          "mean2": 142661,
+          "var12": 1936465,
+          "iid12": 427983,
+          "diag12": 2087495,
+          "native_mean2": 131713
+        },
+        "odd": {
+          "mean2": 59043,
+          "var12": 895481,
+          "iid12": 177129,
+          "diag12": 917697,
+          "native_mean2": 55611
+        },
+        "contrast": {
+          "mean2": -24575,
+          "var12": 2081465,
+          "iid12": 427983,
+          "diag12": 2087495,
+          "native_mean2": -20491
+        }
+      },
+      "sha256": "f6cc93249978e59d1aba111b55ea10ec553917419a3be1210012b5db3580efa6"
+    }
+  }
+}

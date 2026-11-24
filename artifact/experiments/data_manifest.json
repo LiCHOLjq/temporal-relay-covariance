@@ -1,0 +1,30 @@
+[
+  {
+    "name": "CollegeMsg.txt.gz",
+    "url": "https://snap.stanford.edu/data/CollegeMsg.txt.gz",
+    "bytes": 345339,
+    "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+    "records": 59835
+  },
+  {
+    "name": "email-Eu-core-temporal.txt.gz",
+    "url": "https://snap.stanford.edu/data/email-Eu-core-temporal.txt.gz",
+    "bytes": 1683428,
+    "sha256": "f6cc93249978e59d1aba111b55ea10ec553917419a3be1210012b5db3580efa6",
+    "records": 332334
+  },
+  {
+    "name": "soc-sign-bitcoinotc.csv.gz",
+    "url": "https://snap.stanford.edu/data/soc-sign-bitcoinotc.csv.gz",
+    "bytes": 397258,
+    "sha256": "6424ac981dad3a019f697fc1b9fcd85c19d8d9f039797758e9ffb6fea100c373",
+    "records": 35592
+  },
+  {
+    "name": "soc-sign-bitcoinalpha.csv.gz",
+    "url": "https://snap.stanford.edu/data/soc-sign-bitcoinalpha.csv.gz",
+    "bytes": 149480,
+    "sha256": "3a178611b9c2f39c9a0dc75936f28557317f1733319b49da4838232b3757cd76",
+    "records": 24186
+  }
+]

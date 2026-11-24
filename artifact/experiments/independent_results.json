@@ -1,0 +1,3104 @@
+{
+ "cpu_affinity": [
+  4
+ ],
+ "exhaustive_bins": 56,
+ "exhaustive_orders": 41388,
+ "query_modes": [
+  "all",
+  "odd",
+  "contrast"
+ ],
+ "fixtures": [
+  {
+   "name": "empty",
+   "events": [],
+   "orders": 1,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "single",
+   "events": [
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 1,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "path",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "reverse_only",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "directed_triangle",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "3/2",
+    "1",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/3",
+    "11/12"
+   ]
+  },
+  {
+   "name": "multiplicity",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "9/2",
+    "9/2",
+    "9/2"
+   ],
+   "variances": [
+    "21/4",
+    "21/4",
+    "21/4"
+   ]
+  },
+  {
+   "name": "opposed_relays",
+   "events": [
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "2",
+    "1/2",
+    "-1"
+   ],
+   "variances": [
+    "2/3",
+    "1/4",
+    "4/3"
+   ]
+  },
+  {
+   "name": "disjoint",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1",
+    "1/2",
+    "0"
+   ],
+   "variances": [
+    "1/2",
+    "1/4",
+    "1/2"
+   ]
+  },
+  {
+   "name": "random-0",
+   "events": [
+    [
+     1,
+     4
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-1",
+   "events": [
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-2",
+   "events": [
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "5/2",
+    "1/2",
+    "-3/2"
+   ],
+   "variances": [
+    "11/12",
+    "1/4",
+    "19/12"
+   ]
+  },
+  {
+   "name": "random-3",
+   "events": [
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "2",
+    "2",
+    "2"
+   ],
+   "variances": [
+    "2",
+    "2",
+    "2"
+   ]
+  },
+  {
+   "name": "random-4",
+   "events": [
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-5",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-6",
+   "events": [
+    [
+     4,
+     1
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "1",
+    "1",
+    "1"
+   ],
+   "variances": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ]
+  },
+  {
+   "name": "random-7",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-8",
+   "events": [
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1",
+    "1/2",
+    "0"
+   ],
+   "variances": [
+    "1/3",
+    "1/4",
+    "2/3"
+   ]
+  },
+  {
+   "name": "random-9",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "0",
+    "-1/2"
+   ],
+   "variances": [
+    "1/4",
+    "0",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-10",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "3/2",
+    "1",
+    "1/2"
+   ],
+   "variances": [
+    "11/12",
+    "2/3",
+    "11/12"
+   ]
+  },
+  {
+   "name": "random-11",
+   "events": [
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-12",
+   "events": [
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "1/2",
+    "0",
+    "-1/2"
+   ],
+   "variances": [
+    "1/4",
+    "0",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-13",
+   "events": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-14",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-15",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "11/2",
+    "1",
+    "-7/2"
+   ],
+   "variances": [
+    "23/12",
+    "2/3",
+    "71/12"
+   ]
+  },
+  {
+   "name": "random-16",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1",
+    "0",
+    "-1"
+   ],
+   "variances": [
+    "2/3",
+    "0",
+    "2/3"
+   ]
+  },
+  {
+   "name": "random-17",
+   "events": [
+    [
+     4,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "2",
+    "1/2",
+    "-1"
+   ],
+   "variances": [
+    "1/2",
+    "1/4",
+    "7/6"
+   ]
+  },
+  {
+   "name": "random-18",
+   "events": [
+    [
+     5,
+     4
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "1",
+    "1/2",
+    "0"
+   ],
+   "variances": [
+    "1/3",
+    "1/4",
+    "2/3"
+   ]
+  },
+  {
+   "name": "random-19",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-20",
+   "events": [
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "1",
+    "0",
+    "-1"
+   ],
+   "variances": [
+    "2/3",
+    "0",
+    "2/3"
+   ]
+  },
+  {
+   "name": "random-21",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "2",
+    "1/2",
+    "-1"
+   ],
+   "variances": [
+    "1/2",
+    "1/4",
+    "7/6"
+   ]
+  },
+  {
+   "name": "random-22",
+   "events": [
+    [
+     0,
+     3
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-23",
+   "events": [
+    [
+     3,
+     4
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-24",
+   "events": [
+    [
+     4,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-25",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "0",
+    "-1/2"
+   ],
+   "variances": [
+    "1/4",
+    "0",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-26",
+   "events": [
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1",
+    "0",
+    "-1"
+   ],
+   "variances": [
+    "2/3",
+    "0",
+    "2/3"
+   ]
+  },
+  {
+   "name": "random-27",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-28",
+   "events": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "3/2",
+    "1",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/3",
+    "11/12"
+   ]
+  },
+  {
+   "name": "random-29",
+   "events": [
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     0
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-30",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "2",
+    "0",
+    "-2"
+   ],
+   "variances": [
+    "5/3",
+    "0",
+    "5/3"
+   ]
+  },
+  {
+   "name": "random-31",
+   "events": [
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-32",
+   "events": [
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "orders": 120,
+   "means": [
+    "2",
+    "0",
+    "-2"
+   ],
+   "variances": [
+    "5/3",
+    "0",
+    "5/3"
+   ]
+  },
+  {
+   "name": "random-33",
+   "events": [
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     2,
+     5
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-34",
+   "events": [
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-35",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "2",
+    "1/2",
+    "-1"
+   ],
+   "variances": [
+    "1/2",
+    "1/4",
+    "7/6"
+   ]
+  },
+  {
+   "name": "random-36",
+   "events": [
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-37",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-38",
+   "events": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-39",
+   "events": [
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "orders": 6,
+   "means": [
+    "1/2",
+    "0",
+    "-1/2"
+   ],
+   "variances": [
+    "1/4",
+    "0",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-40",
+   "events": [
+    [
+     5,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "3/2",
+    "1",
+    "1/2"
+   ],
+   "variances": [
+    "5/12",
+    "1/2",
+    "13/12"
+   ]
+  },
+  {
+   "name": "random-41",
+   "events": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-42",
+   "events": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "orders": 24,
+   "means": [
+    "1/2",
+    "0",
+    "-1/2"
+   ],
+   "variances": [
+    "1/4",
+    "0",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-43",
+   "events": [
+    [
+     1,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "orders": 2,
+   "means": [
+    "1/2",
+    "1/2",
+    "1/2"
+   ],
+   "variances": [
+    "1/4",
+    "1/4",
+    "1/4"
+   ]
+  },
+  {
+   "name": "random-44",
+   "events": [
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     0
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "3",
+    "5/2",
+    "2"
+   ],
+   "variances": [
+    "13/6",
+    "9/4",
+    "17/6"
+   ]
+  },
+  {
+   "name": "random-45",
+   "events": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "4",
+    "7/2",
+    "3"
+   ],
+   "variances": [
+    "3/2",
+    "23/12",
+    "17/6"
+   ]
+  },
+  {
+   "name": "random-46",
+   "events": [
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "orders": 720,
+   "means": [
+    "0",
+    "0",
+    "0"
+   ],
+   "variances": [
+    "0",
+    "0",
+    "0"
+   ]
+  },
+  {
+   "name": "random-47",
+   "events": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "orders": 5040,
+   "means": [
+    "7/2",
+    "1/2",
+    "-5/2"
+   ],
+   "variances": [
+    "13/4",
+    "1/4",
+    "13/4"
+   ]
+  }
+ ],
+ "script_hashes": {
+  "benchmark.py": "b0c351238506aadb16dec443d248b5a6f9b92a72d5243f9f8c8ce397e63eaa09",
+  "independent_check.py": "2fa7b48539b35e4809f6e84703c93d4b56f91dff17d849f8594e24a940eb766a",
+  "permutation_oracle.py": "131489e17bba7fb0079b003d20252f1d3fef5fca51efe2095f7740c079fa6a33"
+ },
+ "real": {
+  "CollegeMsg.txt.gz": {
+   "eligible": 123,
+   "checked": 32,
+   "bins": [
+    {
+     "hour": 300723,
+     "m": 19,
+     "arcs": 20,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -12
+    },
+    {
+     "hour": 300924,
+     "m": 16,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 300931,
+     "m": 22,
+     "arcs": 13,
+     "matrix_entries": 25,
+     "offdiag_unordered": 10,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 300949,
+     "m": 14,
+     "arcs": 18,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -11
+    },
+    {
+     "hour": 301257,
+     "m": 24,
+     "arcs": 15,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 301748,
+     "m": 18,
+     "arcs": 5,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 301772,
+     "m": 17,
+     "arcs": 11,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -5
+    },
+    {
+     "hour": 301890,
+     "m": 18,
+     "arcs": 5,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 301919,
+     "m": 20,
+     "arcs": 5,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 301950,
+     "m": 22,
+     "arcs": 14,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 302333,
+     "m": 20,
+     "arcs": 31,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -24
+    },
+    {
+     "hour": 302346,
+     "m": 18,
+     "arcs": 27,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -6
+    },
+    {
+     "hour": 302347,
+     "m": 16,
+     "arcs": 9,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 302357,
+     "m": 23,
+     "arcs": 15,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -10
+    },
+    {
+     "hour": 302358,
+     "m": 19,
+     "arcs": 3,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 302374,
+     "m": 17,
+     "arcs": 9,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -5
+    },
+    {
+     "hour": 302453,
+     "m": 22,
+     "arcs": 19,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -6
+    },
+    {
+     "hour": 302522,
+     "m": 8,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 302529,
+     "m": 13,
+     "arcs": 14,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 302639,
+     "m": 20,
+     "arcs": 21,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -8
+    },
+    {
+     "hour": 302856,
+     "m": 6,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 302931,
+     "m": 12,
+     "arcs": 16,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 303222,
+     "m": 24,
+     "arcs": 25,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -7
+    },
+    {
+     "hour": 303242,
+     "m": 11,
+     "arcs": 9,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 303248,
+     "m": 5,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 303654,
+     "m": 15,
+     "arcs": 5,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 303669,
+     "m": 9,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 303679,
+     "m": 24,
+     "arcs": 20,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -18
+    },
+    {
+     "hour": 303732,
+     "m": 19,
+     "arcs": 22,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -24
+    },
+    {
+     "hour": 303846,
+     "m": 9,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 304275,
+     "m": 7,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 304423,
+     "m": 24,
+     "arcs": 41,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -24
+    }
+   ]
+  },
+  "email-Eu-core-temporal.txt.gz": {
+   "eligible": 140,
+   "checked": 32,
+   "bins": [
+    {
+     "hour": 280,
+     "m": 12,
+     "arcs": 7,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 2199,
+     "m": 16,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 2727,
+     "m": 20,
+     "arcs": 7,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 2734,
+     "m": 24,
+     "arcs": 21,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 2968,
+     "m": 17,
+     "arcs": 9,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 3305,
+     "m": 16,
+     "arcs": 11,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -10
+    },
+    {
+     "hour": 3736,
+     "m": 22,
+     "arcs": 6,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 3884,
+     "m": 8,
+     "arcs": 5,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 3975,
+     "m": 22,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 4134,
+     "m": 23,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 4166,
+     "m": 12,
+     "arcs": 10,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 4313,
+     "m": 23,
+     "arcs": 22,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 4361,
+     "m": 10,
+     "arcs": 6,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 6162,
+     "m": 21,
+     "arcs": 16,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 6232,
+     "m": 24,
+     "arcs": 10,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 6288,
+     "m": 10,
+     "arcs": 8,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 6630,
+     "m": 15,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 6953,
+     "m": 14,
+     "arcs": 7,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 7408,
+     "m": 19,
+     "arcs": 8,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 7966,
+     "m": 7,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 8028,
+     "m": 9,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 8080,
+     "m": 18,
+     "arcs": 7,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 8327,
+     "m": 12,
+     "arcs": 12,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 8945,
+     "m": 11,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 8971,
+     "m": 12,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 9754,
+     "m": 22,
+     "arcs": 9,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 10170,
+     "m": 24,
+     "arcs": 60,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -40
+    },
+    {
+     "hour": 10361,
+     "m": 15,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 10911,
+     "m": 19,
+     "arcs": 19,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 11012,
+     "m": 17,
+     "arcs": 30,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -10
+    },
+    {
+     "hour": 11254,
+     "m": 12,
+     "arcs": 15,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -5
+    },
+    {
+     "hour": 12258,
+     "m": 17,
+     "arcs": 8,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    }
+   ]
+  },
+  "soc-sign-bitcoinalpha.csv.gz": {
+   "eligible": 266,
+   "checked": 32,
+   "bins": [
+    {
+     "hour": 360581,
+     "m": 11,
+     "arcs": 9,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 364516,
+     "m": 18,
+     "arcs": 18,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -6
+    },
+    {
+     "hour": 364732,
+     "m": 18,
+     "arcs": 7,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 364996,
+     "m": 24,
+     "arcs": 14,
+     "matrix_entries": 25,
+     "offdiag_unordered": 10,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 365428,
+     "m": 12,
+     "arcs": 8,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 366724,
+     "m": 10,
+     "arcs": 6,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 367709,
+     "m": 18,
+     "arcs": 15,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 367901,
+     "m": 19,
+     "arcs": 10,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 368189,
+     "m": 21,
+     "arcs": 6,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 368261,
+     "m": 23,
+     "arcs": 10,
+     "matrix_entries": 25,
+     "offdiag_unordered": 10,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 369629,
+     "m": 20,
+     "arcs": 5,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 369677,
+     "m": 18,
+     "arcs": 10,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 369868,
+     "m": 19,
+     "arcs": 7,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 370060,
+     "m": 20,
+     "arcs": 13,
+     "matrix_entries": 36,
+     "offdiag_unordered": 15,
+     "negative": 4,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 372100,
+     "m": 20,
+     "arcs": 5,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 372508,
+     "m": 11,
+     "arcs": 4,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 373588,
+     "m": 18,
+     "arcs": 9,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 373996,
+     "m": 12,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 376541,
+     "m": 20,
+     "arcs": 10,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 377741,
+     "m": 17,
+     "arcs": 10,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 377957,
+     "m": 24,
+     "arcs": 8,
+     "matrix_entries": 25,
+     "offdiag_unordered": 10,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 379996,
+     "m": 22,
+     "arcs": 8,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 381388,
+     "m": 17,
+     "arcs": 8,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 381460,
+     "m": 20,
+     "arcs": 4,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 382732,
+     "m": 17,
+     "arcs": 7,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 383356,
+     "m": 11,
+     "arcs": 5,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 384268,
+     "m": 13,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 384989,
+     "m": 17,
+     "arcs": 8,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 385637,
+     "m": 11,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 386501,
+     "m": 11,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 387916,
+     "m": 14,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 389500,
+     "m": 21,
+     "arcs": 12,
+     "matrix_entries": 36,
+     "offdiag_unordered": 15,
+     "negative": 4,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    }
+   ]
+  },
+  "soc-sign-bitcoinotc.csv.gz": {
+   "eligible": 200,
+   "checked": 32,
+   "bins": [
+    {
+     "hour": 360842,
+     "m": 6,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 362521,
+     "m": 7,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 362573,
+     "m": 9,
+     "arcs": 3,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 362682,
+     "m": 7,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 362755,
+     "m": 8,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 363094,
+     "m": 12,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 363110,
+     "m": 5,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 363141,
+     "m": 15,
+     "arcs": 8,
+     "matrix_entries": 25,
+     "offdiag_unordered": 10,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 363647,
+     "m": 9,
+     "arcs": 11,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -5
+    },
+    {
+     "hour": 365116,
+     "m": 5,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 370582,
+     "m": 6,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 371713,
+     "m": 5,
+     "arcs": 4,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 372406,
+     "m": 8,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 374369,
+     "m": 8,
+     "arcs": 7,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 374603,
+     "m": 7,
+     "arcs": 8,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 374604,
+     "m": 17,
+     "arcs": 8,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 374688,
+     "m": 12,
+     "arcs": 16,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 3,
+     "positive": 0,
+     "minimum_offdiag_times12": -6
+    },
+    {
+     "hour": 374728,
+     "m": 6,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 374738,
+     "m": 19,
+     "arcs": 18,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -9
+    },
+    {
+     "hour": 377016,
+     "m": 6,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 377202,
+     "m": 14,
+     "arcs": 29,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -9
+    },
+    {
+     "hour": 378460,
+     "m": 7,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 379033,
+     "m": 8,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 379197,
+     "m": 13,
+     "arcs": 7,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -3
+    },
+    {
+     "hour": 379298,
+     "m": 7,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 379583,
+     "m": 13,
+     "arcs": 5,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 380372,
+     "m": 7,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 381119,
+     "m": 7,
+     "arcs": 2,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 381499,
+     "m": 8,
+     "arcs": 4,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    },
+    {
+     "hour": 384579,
+     "m": 5,
+     "arcs": 3,
+     "matrix_entries": 4,
+     "offdiag_unordered": 1,
+     "negative": 1,
+     "positive": 0,
+     "minimum_offdiag_times12": -1
+    },
+    {
+     "hour": 385531,
+     "m": 15,
+     "arcs": 16,
+     "matrix_entries": 16,
+     "offdiag_unordered": 6,
+     "negative": 5,
+     "positive": 0,
+     "minimum_offdiag_times12": -4
+    },
+    {
+     "hour": 389514,
+     "m": 7,
+     "arcs": 5,
+     "matrix_entries": 9,
+     "offdiag_unordered": 3,
+     "negative": 2,
+     "positive": 0,
+     "minimum_offdiag_times12": -2
+    }
+   ]
+  }
+ }
+}

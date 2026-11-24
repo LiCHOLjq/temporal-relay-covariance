@@ -1,0 +1,5 @@
+# Repeated group-query experiment
+
+Supplement fixed before reading main-run outcomes. On the full hourly data for each trace, aggregate the exact relay covariance matrix across buckets. Dense contrasts assign each active vertex one seeded independent weight in {-1,0,1}. This is a database workload on real event tables with synthetic query predicates. It measures repeated evaluation of different queries on a fixed collection of buckets.
+
+Compare three exact Python paths: (1) evaluate and group endpoint multiplicities for every query, (2) cache the conflict counts A and B once per directed endpoint type per bucket, and (3) combine the diagonal and off-diagonal covariance coefficients once over all buckets. Compare integer results for all 64 contrasts. Charge preprocessing and report raw repeated timings for 1, 8 and 64 queries. Deterministic seed 5917; three rounds in rotated order. Input parsing, bucket formation and generation of query weights are common and excluded. Any unequal integer answer blocks the multiquery claim.

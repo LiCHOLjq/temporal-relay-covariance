@@ -1,0 +1,146 @@
+[
+  {
+    "family": "broadcast",
+    "k": 1,
+    "m": 1,
+    "var12": 3,
+    "iid12": 3,
+    "diag12": 3
+  },
+  {
+    "family": "cycle",
+    "k": 1,
+    "m": 3,
+    "var12": 3,
+    "iid12": 9,
+    "diag12": 9
+  },
+  {
+    "family": "broadcast",
+    "k": 2,
+    "m": 2,
+    "var12": 8,
+    "iid12": 6,
+    "diag12": 8
+  },
+  {
+    "family": "cycle",
+    "k": 2,
+    "m": 12,
+    "var12": 12,
+    "iid12": 36,
+    "diag12": 60
+  },
+  {
+    "family": "broadcast",
+    "k": 3,
+    "m": 3,
+    "var12": 15,
+    "iid12": 9,
+    "diag12": 15
+  },
+  {
+    "family": "cycle",
+    "k": 3,
+    "m": 27,
+    "var12": 27,
+    "iid12": 81,
+    "diag12": 189
+  },
+  {
+    "family": "broadcast",
+    "k": 4,
+    "m": 4,
+    "var12": 24,
+    "iid12": 12,
+    "diag12": 24
+  },
+  {
+    "family": "cycle",
+    "k": 4,
+    "m": 48,
+    "var12": 48,
+    "iid12": 144,
+    "diag12": 432
+  },
+  {
+    "family": "broadcast",
+    "k": 8,
+    "m": 8,
+    "var12": 80,
+    "iid12": 24,
+    "diag12": 80
+  },
+  {
+    "family": "cycle",
+    "k": 8,
+    "m": 192,
+    "var12": 192,
+    "iid12": 576,
+    "diag12": 3264
+  },
+  {
+    "family": "broadcast",
+    "k": 16,
+    "m": 16,
+    "var12": 288,
+    "iid12": 48,
+    "diag12": 288
+  },
+  {
+    "family": "cycle",
+    "k": 16,
+    "m": 768,
+    "var12": 768,
+    "iid12": 2304,
+    "diag12": 25344
+  },
+  {
+    "family": "broadcast",
+    "k": 32,
+    "m": 32,
+    "var12": 1088,
+    "iid12": 96,
+    "diag12": 1088
+  },
+  {
+    "family": "cycle",
+    "k": 32,
+    "m": 3072,
+    "var12": 3072,
+    "iid12": 9216,
+    "diag12": 199680
+  },
+  {
+    "family": "broadcast",
+    "k": 64,
+    "m": 64,
+    "var12": 4224,
+    "iid12": 192,
+    "diag12": 4224
+  },
+  {
+    "family": "cycle",
+    "k": 64,
+    "m": 12288,
+    "var12": 12288,
+    "iid12": 36864,
+    "diag12": 1585152
+  },
+  {
+    "family": "broadcast",
+    "k": 128,
+    "m": 128,
+    "var12": 16640,
+    "iid12": 384,
+    "diag12": 16640
+  },
+  {
+    "family": "cycle",
+    "k": 128,
+    "m": 49152,
+    "var12": 49152,
+    "iid12": 147456,
+    "diag12": 12632064
+  }
+]

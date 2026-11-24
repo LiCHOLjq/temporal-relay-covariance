@@ -1,0 +1,72 @@
+{
+  "CollegeMsg": {
+    "cutoff_hour": 301422,
+    "history_events": 29889,
+    "evaluation_events": 29946,
+    "roles": {
+      "1": 234,
+      "-1": 589,
+      "0": 682
+    },
+    "sender_var12": 425779,
+    "receiver_var12": 105467,
+    "contrast_var12": 554804,
+    "group_cov12": -11779
+  },
+  "EmailEU": {
+    "cutoff_hour": 6588,
+    "history_events": 166121,
+    "evaluation_events": 166213,
+    "roles": {
+      "1": 239,
+      "0": 130,
+      "-1": 545
+    },
+    "sender_var12": 716117,
+    "receiver_var12": 242470,
+    "contrast_var12": 992955,
+    "group_cov12": -17184
+  },
+  "BitcoinOTC": {
+    "cutoff_hour": 377329,
+    "history_events": 17796,
+    "evaluation_events": 17796,
+    "roles": {
+      "-1": 187,
+      "1": 292,
+      "0": 2909
+    },
+    "sender_var12": 3094,
+    "receiver_var12": 726,
+    "contrast_var12": 3840,
+    "group_cov12": -10
+  },
+  "BitcoinAlpha": {
+    "cutoff_hour": 373732,
+    "history_events": 12068,
+    "evaluation_events": 12118,
+    "roles": {
+      "1": 223,
+      "-1": 163,
+      "0": 1771
+    },
+    "sender_var12": 3666,
+    "receiver_var12": 5604,
+    "contrast_var12": 9506,
+    "group_cov12": -118
+  },
+  "MathOverflowA2Q": {
+    "cutoff_hour": 369828,
+    "history_events": 52069,
+    "evaluation_events": 52069,
+    "roles": {
+      "0": 12429,
+      "-1": 1997,
+      "1": 1198
+    },
+    "sender_var12": 88,
+    "receiver_var12": 127,
+    "contrast_var12": 215,
+    "group_cov12": 0
+  }
+}

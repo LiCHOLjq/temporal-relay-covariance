@@ -1,0 +1,48 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1033-oem-x86_64-with-glibc2.39",
+  "affinity": [
+    0
+  ],
+  "exhaustive": {
+    "bins": 41,
+    "queries": 123,
+    "permutations_including_weights": 107175
+  },
+  "sources": {
+    "CollegeMsg": {
+      "file": "CollegeMsg.txt.gz",
+      "sha256": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+      "events": 59835,
+      "dropped_self": 0,
+      "read_sort_s": 0.09030184400000962,
+      "native_stamps": 58911
+    },
+    "EmailEU": {
+      "file": "email-Eu-core-temporal.txt.gz",
+      "sha256": "f6cc93249978e59d1aba111b55ea10ec553917419a3be1210012b5db3580efa6",
+      "events": 332334,
+      "dropped_self": 0,
+      "read_sort_s": 0.22831679300003316,
+      "native_stamps": 207880
+    },
+    "BitcoinOTC": {
+      "file": "soc-sign-bitcoinotc.csv.gz",
+      "sha256": "6424ac981dad3a019f697fc1b9fcd85c19d8d9f039797758e9ffb6fea100c373",
+      "events": 35592,
+      "dropped_self": 0,
+      "read_sort_s": 0.027543770000022505,
+      "native_stamps": 35592
+    },
+    "BitcoinAlpha": {
+      "file": "soc-sign-bitcoinalpha.csv.gz",
+      "sha256": "3a178611b9c2f39c9a0dc75936f28557317f1733319b49da4838232b3757cd76",
+      "events": 24186,
+      "dropped_self": 0,
+      "read_sort_s": 0.01850279800004273,
+      "native_stamps": 1647
+    }
+  },
+  "hourly_checks": 87264,
+  "script_sha256": "b0c351238506aadb16dec443d248b5a6f9b92a72d5243f9f8c8ce397e63eaa09"
+}
