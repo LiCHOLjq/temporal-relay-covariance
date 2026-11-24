@@ -1,0 +1,8 @@
+{
+  "intervals": 204,
+  "observed_wall_s": 46.84523534300004,
+  "runnable_wait_ms": 25.363211999999994,
+  "wait_fraction": 0.0005414256501070167,
+  "sibling_busy_median": 0.0,
+  "sibling_busy_max": 0.0
+}

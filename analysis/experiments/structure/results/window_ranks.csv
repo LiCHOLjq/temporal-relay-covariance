@@ -1,0 +1,4 @@
+width_s,windows,comparisons,tau_b,concordant,discordant,full_only_tied,ablated_only_tied,both_tied
+60,32,496,0.8346828676811174,274,1,0,114,107
+3600,32,496,0.9706779481670449,487,7,1,0,1
+86400,30,435,1.0,435,0,0,0,0

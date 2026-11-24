@@ -1,7 +1,10 @@
 # Temporal relay covariance
 
-This repository accompanies a study of two-hop paths in temporal networks with coarsened timestamps. It contains the analysis code, aggregate measurements, and scripts for reproducing the figures.
+Code and measurements for estimating the covariance of two-hop relay counts when timestamps conceal event order.
 
-Start with [the experiment guide](artifact/README.md). The input script retrieves the public event logs from Stanford SNAP and checks the downloaded files against their recorded hashes.
+- [Original analysis](artifact/README.md) — download the public logs from Stanford SNAP, verify their checksums, and reproduce the baseline calculations.
+- [Structural diagnostics](analysis/experiments/structure/README.md) — bucket widths and origins, timestamp gaps, native-order replay, and relay rankings.
+- [Timing experiments](analysis/experiments/timing/README.md) — matched kernels, construction and query costs, scheduler measurements, and individual trials.
+- [Figures](analysis/figures) — scripts and vector plots used in the manuscript.
 
-The repository is public for inspection. The rights holder has not granted an open licence for the code or derived statistics. The original event logs are retrieved from their providers.
+The rights holder makes the code and derived statistics available for inspection and has not granted an open licence. Obtain the original event logs from their [source pages](artifact/DATA_SOURCES.md).

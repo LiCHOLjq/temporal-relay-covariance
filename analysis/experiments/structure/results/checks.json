@@ -1,0 +1,17 @@
+{
+  "archived_four_moment_rows_matched": 39,
+  "hourly_native_counts_matched": 5,
+  "rank_windows_checked": 94,
+  "shuffle_checks": 4,
+  "inputs_sha256": {
+    "CollegeMsg.txt.gz": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+    "email-Eu-core-temporal.txt.gz": "f6cc93249978e59d1aba111b55ea10ec553917419a3be1210012b5db3580efa6",
+    "soc-sign-bitcoinotc.csv.gz": "6424ac981dad3a019f697fc1b9fcd85c19d8d9f039797758e9ffb6fea100c373",
+    "soc-sign-bitcoinalpha.csv.gz": "3a178611b9c2f39c9a0dc75936f28557317f1733319b49da4838232b3757cd76",
+    "sx-mathoverflow-a2q.txt.gz": "1e160dcd3e685f7467f4869451899bae0299016080ae994895a900b57812ca78"
+  },
+  "aligned_width_cells": 15,
+  "phase_width_cells": 60,
+  "all_query_width_cells": 45,
+  "python": "3.12.3"
+}

@@ -1,0 +1,22 @@
+{
+  "CollegeMsg": {
+    "diagonal": 850,
+    "unordered_cross": 2102,
+    "cached_terms": 17729
+  },
+  "EmailEU": {
+    "diagonal": 631,
+    "unordered_cross": 3317,
+    "cached_terms": 101060
+  },
+  "BitcoinOTC": {
+    "diagonal": 1124,
+    "unordered_cross": 393,
+    "cached_terms": 6282
+  },
+  "BitcoinAlpha": {
+    "diagonal": 1273,
+    "unordered_cross": 1508,
+    "cached_terms": 11980
+  }
+}

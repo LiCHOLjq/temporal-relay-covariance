@@ -1,0 +1,18 @@
+{
+  "reference_run": "Designated Linux experimental server, unique directory",
+  "server_python": "3.12.3",
+  "independent_replay": "Windows workstation",
+  "replay_python": "3.11.14",
+  "method": "All nine statistical output files match by SHA-256. All validation fields match except the Python version.",
+  "sha256": {
+    "buckets.csv.gz": "6b557161c4e8f44ee0904f289f5585ffab8f92521ad0fe07aab5c15965bbc7df",
+    "gap_histogram.csv.gz": "4ef3a5f1d16d5e54ec4d017bdcaa0575d940fb323f40a521abddc1c177423c15",
+    "native_replay.csv": "52146051b80f57a57d3a123881443a4e2b54460da12db7729dc108ec9c0c8117",
+    "phase_statistics.csv": "7357282d1ca9d9863998bb367150d69cbe53df1bc27c289deaab0a79cc32a277",
+    "query_moments.csv": "2ebd362b999f6440b416330ee115218ef7cac8d52734f5ead0bbf850a3098514",
+    "shuffle_precision.csv": "b34990283dc546ad8ff7d5c0291e5543aeadd81d370d559ee5a9bb33c2fdcb22",
+    "timestamp_gaps.csv": "3afd4aac48c3d1d85e943ae00fb30f99150a0012f5f68de17f3936f58ebc991e",
+    "width_statistics.csv": "5245de5440c7b37b65ccff168ac37d3b244a12d50736f2ec04f54339c023f188",
+    "window_ranks.csv": "9707f8062da8dd17c28f6000f7b35114d9296834e5bf35ecfa4da64b14a608fa"
+  }
+}
