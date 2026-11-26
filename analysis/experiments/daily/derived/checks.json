@@ -1,0 +1,10 @@
+{
+  "workloads": 14,
+  "matched_bucket_entries": 79089,
+  "timing_rows": 336,
+  "intervals": 168,
+  "monitored_wall_s": 14.36686458299664,
+  "runnable_wait_ms": 8.779171000000002,
+  "runnable_wait_pct": 0.06110707697760483,
+  "max_sibling_busy": 0.0
+}

@@ -1,4 +1,4 @@
-"""Regenerate the two empirical figure PDFs from the archived measurements.
+"""Regenerate the two empirical figure PDFs from the archived experiment outputs.
 
 Run from any directory with Python 3 and Matplotlib installed.
 """

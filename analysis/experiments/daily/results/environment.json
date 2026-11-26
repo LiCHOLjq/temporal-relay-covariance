@@ -1,0 +1,34 @@
+{
+  "start_utc": "2026-11-24T09:30:07+00:00",
+  "model": "Intel(R) Xeon(R) w9-3475X",
+  "os": "Linux",
+  "release": "6.17.0-1033-oem",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "allowed_cpu_count": 72,
+  "affinity": [
+    0
+  ],
+  "cpu_siblings": [
+    0,
+    36
+  ],
+  "two_second_initial_busy": {
+    "0": 0.0,
+    "36": 0.0
+  },
+  "timed_trials": 12,
+  "warmup_trials": 1,
+  "sha256": {
+    "CollegeMsg.txt.gz": "50ae2d98ed3bad9ddb18dbd495a89e5e10cfb8f7e86932827db29fc41b41f9fa",
+    "email-Eu-core-temporal.txt.gz": "f6cc93249978e59d1aba111b55ea10ec553917419a3be1210012b5db3580efa6",
+    "soc-sign-bitcoinotc.csv.gz": "6424ac981dad3a019f697fc1b9fcd85c19d8d9f039797758e9ffb6fea100c373",
+    "soc-sign-bitcoinalpha.csv.gz": "3a178611b9c2f39c9a0dc75936f28557317f1733319b49da4838232b3757cd76",
+    "sx-mathoverflow-a2q.txt.gz": "1e160dcd3e685f7467f4869451899bae0299016080ae994895a900b57812ca78"
+  },
+  "code_sha256": {
+    "run_daily.py": "e5af930f7dceacba24c6bb6f6dc952a1b58a355687b4d2dbde104936801576c0",
+    "benchmark.py": "b0c351238506aadb16dec443d248b5a6f9b92a72d5243f9f8c8ce397e63eaa09"
+  },
+  "end_utc": "2026-11-24T09:30:25+00:00"
+}

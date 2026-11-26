@@ -1,14 +1,14 @@
 # Sequential timing study
 
-The reference measurements in results/ were made on the designated experiment server on 2026-11-24 using an isolated working directory. Run the commands below from the the project project root containing artifact/, raw_input_cache/, and analysis/.
+The reference measurements in results/ were made on the designated experiment server on 2026-11-24 using an isolated working directory. Run the commands below from the extracted root containing artifact/ and analysis/.
 
 ## Reproduce the measurements
 
-Use Linux with Python 3.10 or newer, SQLite 3.35 or newer (materialized CTEs), /proc and CPU topology support. The reference run used Python 3.12.3, SQLite 3.45.1 and Linux 6.17.0-1033-oem on an Intel Xeon w9-3475X. The timing driver uses the Python standard library and the original study kernels. It checks SHA-256 digests of all five compressed inputs before measurement. The original source URLs and preparation instructions are in [the artifact guide](../../../artifact/README.md). When using the downloader, substitute its populated artifact/experiments/data/ directory for raw_input_cache/.
+Use Linux with Python 3.10 or newer, SQLite 3.35 or newer (materialized CTEs), /proc and CPU topology support. The reference run used Python 3.12.3, SQLite 3.45.1 and Linux 6.17.0-1033-oem on an Intel Xeon w9-3475X. The timing driver uses the Python standard library and the original study kernels. It checks SHA-256 digests of all five compressed inputs before measurement. The original source URLs and preparation instructions are in [the artifact guide](../../../artifact/README.md). Run the data-preparation command in the top-level README before measuring.
 
 ~~~sh
 PYTHONHASHSEED=0 python3 analysis/experiments/timing/run_timing.py \
-  --lib artifact/experiments --data raw_input_cache \
+  --lib artifact/experiments --data artifact/experiments/data \
   --out analysis/experiments/timing/replay
 ~~~
 

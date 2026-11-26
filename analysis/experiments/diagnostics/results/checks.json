@@ -1,0 +1,7 @@
+{
+  "input_sha256": "6b557161c4e8f44ee0904f289f5585ffab8f92521ad0fe07aab5c15965bbc7df",
+  "checked_width_cells": 15,
+  "hourly_subset_rows": 10,
+  "alpha_same_partition_cells": 12,
+  "alpha_distinct_times": 1647
+}

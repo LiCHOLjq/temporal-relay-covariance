@@ -1,10 +1,12 @@
 # Temporal relay covariance
 
-Code and measurements for estimating the covariance of two-hop relay counts when timestamps conceal event order.
+Code and data summaries for computing the covariance of two-hop relay counts when timestamps conceal event order.
 
-- [Original analysis](artifact/README.md) — download the public logs from Stanford SNAP, verify their checksums, and reproduce the baseline calculations.
-- [Structural diagnostics](analysis/experiments/structure/README.md) — bucket widths and origins, timestamp gaps, native-order replay, and relay rankings.
-- [Timing experiments](analysis/experiments/timing/README.md) — matched kernels, construction and query costs, scheduler measurements, and individual trials.
-- [Figures](analysis/figures) — scripts and vector plots used in the manuscript.
+- [Original experiments and data sources](artifact/README.md)
+- [Timestamp and relay statistics](analysis/experiments/structure/README.md)
+- [Variance bounds and concentration](analysis/experiments/diagnostics/README.md)
+- [Hourly query benchmarks](analysis/experiments/timing/README.md)
+- [Hourly and daily comparisons](analysis/experiments/daily/README.md)
+- [Figure scripts and plots](analysis/figures)
 
-The rights holder makes the code and derived statistics available for inspection and has not granted an open licence. Obtain the original event logs from their [source pages](artifact/DATA_SOURCES.md).
+Run `python artifact/prepare_inputs.py` to download the five original logs from Stanford SNAP and verify their checksums. Source logs are distributed by their providers. The code and derived statistics are public for inspection. The rights holder has not granted an open licence.

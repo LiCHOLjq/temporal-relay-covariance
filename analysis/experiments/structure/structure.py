@@ -1,4 +1,4 @@
-"""R1 structural diagnostics. Python 3.10+, standard library only."""
+"""Structural diagnostics. Python 3.10+, standard library only."""
 import argparse
 import csv
 import gzip
